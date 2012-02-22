@@ -10,17 +10,14 @@ Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_2.2-0.tar.gz
-Requires:         R-utils 
-%if %{with bootstrap}
-Requires:         R-network R-rgl R-numDeriv R-SparseM
-%else
-Requires:         R-network R-rgl R-numDeriv R-SparseM R-statnet 
+Requires:         R-utils R-network R-rgl R-numDeriv R-SparseM
+%if %{without bootstrap}
+Requires:         R-statnet 
 %endif
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-utils
-%if %{with bootstrap}
-BuildRequires:    R-network R-rgl R-numDeriv R-SparseM
-%else
-BuildRequires:    R-network R-rgl R-numDeriv R-SparseM R-statnet 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex
+BuildRequires:    R-utils R-network R-rgl R-numDeriv R-SparseM
+%if %{without bootstrap}
+BuildRequires:    R-statnet
 %endif
 
 %description
