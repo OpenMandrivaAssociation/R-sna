@@ -3,13 +3,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          2.2_2
+Version:          2.3.1
 Release:          1
 Summary:          Tools for Social Network Analysis
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_2.2-2.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/sna_2.3-1.tar.gz
 Requires:         R-utils R-network R-rgl R-numDeriv R-SparseM
 %if %{without bootstrap}
 Requires:         R-statnet 
@@ -53,3 +53,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+
