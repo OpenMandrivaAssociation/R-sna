@@ -4,7 +4,7 @@
 
 Name:             R-%{packname}
 Version:          2.3.1
-Release:          1
+Release:          2
 Summary:          Tools for Social Network Analysis
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
