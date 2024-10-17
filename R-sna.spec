@@ -8,7 +8,7 @@ Release:          2
 Summary:          Tools for Social Network Analysis
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/sna_2.3-1.tar.gz
 Requires:         R-utils R-network R-rgl R-numDeriv R-SparseM
 %if %{without bootstrap}
